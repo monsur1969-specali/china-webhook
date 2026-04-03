@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
-require('dotenv').config();${GEMINI_API_KEY}
+require('dotenv').config();require('dotenv').config();
 
 const app = express();
 app.use(bodyParser.json());
