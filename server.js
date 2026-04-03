@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
-require('dotenv').config();
+require('dotenv').config();${GEMINI_API_KEY}
 
 const app = express();
 app.use(bodyParser.json());
@@ -94,7 +94,7 @@ Order intent detect হলে (order, নিব, কিনব, buy, চাই, �
   };
 
   const res = await axios.post(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
     requestBody,
     { headers: { 'Content-Type': 'application/json' } }
   );
