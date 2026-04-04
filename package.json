@@ -1,6 +1,6 @@
 {
   "name": "china-webhook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Global China Trading Facebook AI Bot",
   "main": "server.js",
   "scripts": {
